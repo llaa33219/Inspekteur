@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-Inspekteur",
+  "version": "1.0",
+  "description": "외부 사이트로 이동 전 사이트 안전성 검사를 해줍니다.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://playentry.org/*",
+    "https://safebrowsing.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon16.png", "icon48.png", "icon128.png"],
+      "matches": ["https://playentry.org/*"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

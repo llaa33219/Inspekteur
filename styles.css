@@ -1,0 +1,43 @@
+/* PlayEntry URL Safety Check Styles */
+
+/* 안전성 표시를 위한 기본 스타일 */
+.css-11aguhf:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 4px;
+}
+
+/* 안전한 사이트 표시 (녹색) */
+.safe-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjNDBEZjY2Ii8+Cjwvc3ZnPgo=');
+}
+
+/* 성인 콘텐츠 사이트 표시 (진한 빨간색) */
+.adult-content-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjREM0OTQ5Ii8+Cjwvc3ZnPgo=');
+}
+
+/* 폭력적/잔인한 콘텐츠 사이트 표시 (검은색) */
+.violent-content-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=');
+}
+
+/* 도박 사이트 표시 (보라색) */
+.gambling-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjOEE0RkZGIi8+Cjwvc3ZnPgo=');
+}
+
+/* 일반 위험한 사이트 표시 (빨간색) */
+.dangerous-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjRkY0NDQ0Ii8+Cjwvc3ZnPgo=');
+}
+
+/* 알 수 없는 상태 표시 (노란색) */
+.unknown-site .css-11aguhf:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMkwxMC41IDQuNUwxNCA1TDEyIDlMMTMgMTNMOCAxMUwzIDEzTDQgOUwyIDVMNS41IDQuNUw4IDJaIiBmaWxsPSIjRkZCQjMzIi8+Cjwvc3ZnPgo=');
+}
